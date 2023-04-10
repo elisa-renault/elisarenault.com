@@ -1,0 +1,18 @@
+
+// Index.scss
+
+// Change defaults    
+
+//Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Additional utilities
+
+// 6. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+//7. Custom SCSS
+
+@import "./_theme.scss";
+
+@import "./_stuff.scss";

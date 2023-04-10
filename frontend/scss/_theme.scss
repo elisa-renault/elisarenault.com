@@ -1,14 +1,7 @@
-@mixin color-scheme($name) {
-    @media (prefers-color-scheme: #{$name}) {
-      @content;
-    }
-}
-
-@include color-scheme(dark) {
-
+[data-theme='dark'] {
     .adapt {
-        background-color: $dark;
-        color: $light;
+      background-color: $dark;
+      color: $light;
     }
         
     .navbar {
@@ -80,11 +73,10 @@
 
 }
 
-@include color-scheme(light) {
-        
+[data-theme='light'] {
     .adapt {
-        background-color: $light;
-        color: $dark;
+      background-color: $light;
+      color: $dark;
     }
 
     .navbar {

@@ -1,6 +1,6 @@
 doctype
 
-html(lang="fr")
+html(lang="fr", data-theme=preferredTheme)
 
 head
   meta(charset='UTF-8')
@@ -24,9 +24,11 @@ head
 body.adapt
     
   nav.navbar.navbar-expand
-    .container.justify-content-center
-      a.navbar-brand(href='/') Elisa Renault
-
+    .container.justify-content-between
+        a.navbar-brand(href='/') Elisa Renault
+        .theme-switch
+          input#theme-switch(type='checkbox', autocomplete='off')
+          label(for='theme-switch')
 
   main
     block content
@@ -35,3 +37,5 @@ body.adapt
   footer
     .container
       p.text-center © 2023 Elisa Renault. Tous droits réservés.
+
+  script(src='/javascripts/theme.js')

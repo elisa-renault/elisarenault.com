@@ -27,3 +27,42 @@
       }
     }
 }
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    background-color: $gray-400;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: $white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      transition: left 0.3s;
+    }
+  }
+
+  input[type='checkbox']:checked + label {
+    background-color: $gray-800;
+
+    &:after {
+      left: 22px;
+    }
+  }
+}

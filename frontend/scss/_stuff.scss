@@ -17,16 +17,11 @@
       margin-bottom: 10px;
   
       .btn {
-        background-color: #f8f9fa; // light grey background color
-        color: #212529; // darker text color
-        border: 1px solid #ced4da; // border color
         text-align: center;
         width: 100%; // making all buttons the same width
   
         &:hover,
         &:focus {
-          background-color: #e9ecef; // slightly darker grey on hover and focus
-          color: #212529;
           text-decoration: none;
         }
       }

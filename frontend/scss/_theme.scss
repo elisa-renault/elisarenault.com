@@ -61,6 +61,23 @@
         }
     }
 
+    .link-container {
+      
+        .link-item {
+      
+          .btn {
+            background-color: $dark; // light grey background color
+            color: $light; // darker text color
+            border: 1px solid $gray-700; // border color
+      
+            &:hover,
+            &:focus {
+              background-color: $gray-800; // slightly darker grey on hover and focus
+            }
+          }
+        }
+    }
+
 }
 
 @include color-scheme(light) {
@@ -117,6 +134,23 @@
             a:focus  {
             color: $navbar-light-active-color;
             }
+        }
+    }
+
+    .link-container {
+      
+        .link-item {
+      
+          .btn {
+            background-color: $light; // light grey background color
+            color: $dark; // darker text color
+            border: 1px solid $gray-400; // border color
+      
+            &:hover,
+            &:focus {
+              background-color: $gray-300; // slightly darker grey on hover and focus
+            }
+          }
         }
     }
 

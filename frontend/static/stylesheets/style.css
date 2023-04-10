@@ -15799,6 +15799,15 @@ textarea.form-control-lg {
 .navbar .navbar-text a:focus {
     color: #fff;
   }
+
+  .link-container .link-item .btn {
+    background-color: #212529;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+  }
+  .link-container .link-item .btn:hover, .link-container .link-item .btn:focus {
+    background-color: #343a40;
+  }
 }
 @media (prefers-color-scheme: light) {
   .adapt {
@@ -15840,6 +15849,15 @@ textarea.form-control-lg {
 .navbar .navbar-text a:focus {
     color: rgba(0, 0, 0, 0.9);
   }
+
+  .link-container .link-item .btn {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #ced4da;
+  }
+  .link-container .link-item .btn:hover, .link-container .link-item .btn:focus {
+    background-color: #dee2e6;
+  }
 }
 .width-100 {
   width: 100px;
@@ -15858,15 +15876,10 @@ textarea.form-control-lg {
   margin-bottom: 10px;
 }
 .link-container .link-item .btn {
-  background-color: #f8f9fa;
-  color: #212529;
-  border: 1px solid #ced4da;
   text-align: center;
   width: 100%;
 }
 .link-container .link-item .btn:hover, .link-container .link-item .btn:focus {
-  background-color: #e9ecef;
-  color: #212529;
   text-decoration: none;
 }
 

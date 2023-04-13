@@ -21,19 +21,24 @@ head
     gtag('js', new Date());
     gtag('config', 'G-GH0HWTX71P');
 
+  // Bootstrap icons
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css')
+
+
 body.adapt
-    
+  
+  
   nav.navbar.navbar-expand
-    .container.justify-content-between
-        a.navbar-brand(href='/') Elisa Renault
-        .theme-switch
-          input#theme-switch(type='checkbox', autocomplete='off')
-          label(for='theme-switch')
+    div.container-fluid.p-3
+      a.navbar-brand.position-absolute.top-50.start-50.translate-middle(href='/') Elisa Renault
+      .theme-switch.d-flex.justify-content-end.pe-3.position-absolute.top-50.end-0.translate-middle-y
+        input#theme-switch(type='checkbox', autocomplete='off')
+        label(for='theme-switch')
+        i.ms-1.bi.bi-moon-fill
 
   main
     block content
 
-  hr
   footer
     .container
       p.text-center © 2023 Elisa Renault. Tous droits réservés.

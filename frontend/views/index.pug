@@ -2,11 +2,9 @@ extends layout
 
 block content
 
-  .container
-    p.text-center
-      a(href="mailto:contact@elisarenault.com") contact@elisarenault.com
-
   .container.link-container
+      p.text-center
+        a(href="mailto:contact@elisarenault.com") contact@elisarenault.com
       each link, iconName in [['Portfolio', 'https://elisarenault.notion.site/elisarenault/Portfolio-d-Elisa-Renault-04028a37cde948e9b6096feb4aa0e67e', 'fas fa-briefcase'], ['LinkedIn', 'https://www.linkedin.com/in/elisa-renault/', 'fab fa-linkedin'], ['GitHub', 'https://github.com/elisa-renault/', 'fab fa-github'], ['CodePen', 'https://codepen.io/elisa_renault', 'fab fa-codepen'], ['Twitter', 'https://twitter.com/lil_elsia', 'fab fa-twitter'], ['Instagram', 'https://www.instagram.com/elisa.rnlt/', 'fab fa-instagram']]
         .link-item
           a.btn.btn-primary.btn-lg.btn-block(href=link[1] target="_blank" rel="noopener noreferrer")
